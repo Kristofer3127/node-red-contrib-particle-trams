@@ -1,11 +1,11 @@
 {
-  "name": "@particle/node-red-contrib-particle-official",
-  "version": "0.1.7",
-  "description": "Official Node-RED Particle nodes",
+  "name": "@pdubrovskiy-innowise/node-red-contrib-particle-official-trams",
+  "version": "1.0.0",
+  "description": "Updated Official Node-RED Particle nodes",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/particle-iot/node-red-contrib-particle-official.git"
+    "url": "https://github.com/Kristofer3127/node-red-contrib-particle-trams"
   },
   "keywords": [
     "node-red"
@@ -20,12 +20,12 @@
       "api": "nodes/api/api.js"
     }
   },
-  "author": "Wojtek 'suda' Siudzinski",
+  "author": "Pavel Dubrouski",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/particle-iot/node-red-contrib-particle-official/issues"
+  "homepage": "https://github.com/Kristofer3127/node-red-contrib-particle-trams#readme",
+  "publishConfig": {
+    "access": "public"
   },
-  "homepage": "https://github.com/particle-iot/node-red-contrib-particle-official#readme",
   "dependencies": {
     "lodash": "^4.17.21",
     "particle-api-js": "^9.4.1"
