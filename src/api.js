@@ -179,12 +179,23 @@ module.exports = class Api {
     this._logger.log("Reauthenticating...");
     this.cleanup();
 
-    this.login().catch(() => {
-      const retryIn = 5;
-      this._logger.error(
-        `Failed to reauthenticate. Trying again in ${retryIn} seconds`
-      );
-      setTimeout(this._reauthenticate.bind(this), retryIn * 1000);
-    });
+    this.login()
+      .then(() => {
+        if (this._lastListenOptions) {
+          this._logger.log(this._lastListenOptions);
+          this._logger.log("Reconnecting to event stream...");
+
+          this.listenToEventStream(this._lastListenOptions).catch((err) => {
+            this._logger.error(`Failed to reconnect to event stream: ${err}`);
+          });
+        }
+      })
+      .catch(() => {
+        const retryIn = 5;
+        this._logger.error(
+          `Failed to reauthenticate. Trying again in ${retryIn} seconds`
+        );
+        setTimeout(this._reauthenticate.bind(this), retryIn * 1000);
+      });
   }
 };
