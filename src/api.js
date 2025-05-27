@@ -24,7 +24,7 @@ module.exports = class Api {
    */
   login() {
     return this._particle.loginAsClientOwner({}).then((res) => {
-      this._logger.log("Authenticated with Particle");
+      this._logger.log(`Authenticated with Particle, Dependency version: ${require("particle-api-js/package.json").version}`);
       this._accessToken = res.body.access_token;
       // Reauthenticate before the token expires
       // There is res.body.expires_in property but
