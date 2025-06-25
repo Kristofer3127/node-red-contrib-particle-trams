@@ -1,5 +1,5 @@
 {
-  "name": "@pdubrovskiy-innowise/node-red-contrib-particle-official-trams",
+  "name": "node-red-contrib-particle-trams",
   "version": "2.1.0",
   "description": "Updated Official Node-RED Particle nodes",
   "scripts": {},
