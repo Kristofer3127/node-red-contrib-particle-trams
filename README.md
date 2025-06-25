@@ -2,7 +2,8 @@
 
 A refactored, fixed, and updated version of the Node-RED contribution for Particle Trams integration. This package provides Node-RED nodes for interacting with Particle devices and Trams functionality.
 
-[View on Node-RED Flow Library](https://www.npmjs.com/package/node-red-contrib-particle-trams)
+- [View on NPM Registry](https://www.npmjs.com/package/node-red-contrib-particle-trams)
+- [View on Node-RED Flow Library](https://flows.nodered.org/node/node-red-contrib-particle-trams)
 
 ## Description
 
