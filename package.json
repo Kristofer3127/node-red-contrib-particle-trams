@@ -20,7 +20,7 @@
       "api": "nodes/api/api.js"
     }
   },
-  "author": "Pavel Dubrouski",
+  "author": "Pavel Dubrouski, Kristofer Arreguin",
   "license": "MIT",
   "homepage": "https://github.com/Kristofer3127/node-red-contrib-particle-trams#readme",
   "publishConfig": {
