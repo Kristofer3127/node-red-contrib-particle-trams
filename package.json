@@ -1,11 +1,11 @@
 {
   "name": "node-red-contrib-particle-trams",
-  "version": "2.1.0",
+  "version": "2.1.2",
   "description": "Updated Official Node-RED Particle nodes",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/Kristofer3127/node-red-contrib-particle-trams"
+    "url": "git+https://github.com/Kristofer3127/node-red-contrib-particle-trams.git"
   },
   "keywords": [
     "node-red"
